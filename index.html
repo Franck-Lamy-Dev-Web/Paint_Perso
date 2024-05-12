@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Paint App</title>
+</head>
+<body>
+
+    <h1>Paint</h1>
+
+    <canvas id="paintCanvas" width="700px" height="700px"></canvas>
+    <div class="boutons">
+        <button id="blackBtn" onclick="changeColor('black')">Noir</button>
+        <button id="redBtn" onclick="changeColor('red')">Rouge</button>
+        <button id="blueBtn" onclick="changeColor('blue')">Bleu</button>
+        <button onclick="reset()">Effacer</button>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>

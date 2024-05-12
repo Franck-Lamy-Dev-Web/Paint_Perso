@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url('./papier\ dessin.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+canvas {
+  background-image: url(./carnet.png);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  display: block;
+  margin: auto;
+  background-color: white;
+  cursor: crosshair;
+  border: solid;
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px rgba(18, 18, 18, 0.5);
+}
+
+h1{
+  text-align: center;
+font-weight: bolder;
+}
+
+button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 50px;
+  margin-top: 1rem;
+
+}
+
+.boutons {
+  display: flex;
+  flex-direction: column; 
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  margin-left: 30rem;
+  transform: translateY(-50%);
+}
+
+button {
+  /* Styles communs à tous les boutons */
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #f3d3a4;
+  color: #000;
+}
+
+button.selected {
+  /* Styles pour les boutons sélectionnés */
+  background-color: grey;
+  color: black;
+  font-weight: bold;
+}
+
+/* Styles spécifiques pour chaque couleur */
+#blackBtn {
+  color: black;
+  font-weight: bold;
+}
+
+#redBtn {
+  color: red;
+  font-weight: bold;
+}
+
+#blueBtn {
+  color: blue;
+}
